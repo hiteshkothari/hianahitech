@@ -1,1 +1,143 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+// html {
+//   // font-family: sans-serif;
+//   // scroll-snap-type: mandatory;
+//   // scroll-snap-points-y: repeat(100vh);
+//   // scroll-snap-type: y mandatory;
+// }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+
+.mainpage {
+  // overflow-x: hidden;
+  .headerContainer {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+
+    .header,
+    .info {
+      background-color: pink;
+      // padding: 40vh 0;
+      border-bottom: 1px solid white;
+      padding: 1rem;
+      height: 100vh;
+      scroll-snap-align: start;
+      text-align: center;
+      position: relative;
+
+      .messageText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        // color: white;
+        width: 100%;
+        left: 0;
+        font-size: calc(1rem + 3vw);
+
+        // margin: 16px auto;
+        span {
+          font-size: 25px;
+        }
+        .c {
+          display: none;
+        }
+        .s {
+          display: inline;
+        }
+        &:hover {
+          .c {
+            display: inline;
+          }
+          .s {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .info {
+    background-color: greenyellow !important;
+  }
+  .coffeeContent {
+    background-color: #f9e5bc !important;
+  }
+  .animationZone {
+    position: relative;
+    height: 100vh;
+    .animationControl {
+      width: 100%;
+      max-height: 170px;
+      position: absolute;
+      bottom: 0;
+      .bottomBars {
+        max-width: 325px;
+        width: calc(100% - 10px);
+        background-color: white;
+        margin: 0 auto;
+        border: 1px solid brown;
+        border-radius: 5px;
+        border-bottom: 0px;
+        .timingBottomBar,
+        .seasonBottomBar {
+          // height: 50px;
+          width: 95%;
+          display: block;
+          margin: 0 auto;
+          button {
+            // height: 65px;
+            // max-height: 65px;
+            background-color: white;
+            border: none;
+            background-size: 100% 100%;
+            &.timing {
+              width: 25%;
+            }
+            &.seasons {
+              width: 33.3%;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footerFill {
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    color: white;
+    div {
+      margin: 0 16px;
+      padding: 16px 0;
+    }
+  }
+  // .headerContainer,
+  // .footerFill,
+  // .animationZone {
+  //   scroll-snap-align: start;
+  // }
+}
+a {
+  color: wheat;
+}
