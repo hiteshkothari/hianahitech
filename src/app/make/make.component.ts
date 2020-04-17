@@ -13,7 +13,7 @@ export class MakeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    gsap.registerPlugin(Draggable, InertiaPlugin);
+    gsap.registerPlugin(Draggable);
 
     gsap.set('#circle', { transformOrigin: '50% 50%' })
 

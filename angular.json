@@ -45,8 +45,7 @@
             ],
             "scripts": [
               "src/scripts/gsap.min.js",
-              "src/scripts/Draggable.min.js",
-             
+              "src/scripts/Draggable.min.js"
             ]
           },
           "configurations": {
