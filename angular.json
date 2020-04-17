@@ -43,10 +43,7 @@
                 "inject": false
               }
             ],
-            "scripts": [
-              // "src/scripts/gsap.min.js",
-              // "src/scripts/Draggable.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
