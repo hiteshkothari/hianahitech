@@ -4,6 +4,8 @@
 * {
   box-sizing: border-box;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: transparent;
 }
 // html {
 //   // font-family: sans-serif;
@@ -23,23 +25,51 @@ body {
 h3,
 h4 {
   text-align: center;
+  padding: 16px 0;
+}
+.flex-container {
+  display: flex;
+  height: 38px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // justify-content:
+  justify-content: space-between;
+  background-color: wheat;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  div:nth-child(2) {
+    background-color: grey;
+    // margin: 0 5px;
+    padding: 6px;
+    width: 100px;
+    text-align: center;
+    // align-content: center;
+    flex-shrink: 1;
+  }
+  h1 {
+    margin: 0;
+    // visibility: hidden;
+  }
 }
 
 .mainpage {
   // overflow-x: hidden;
   .headerContainer {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     text-align: center;
-
+    .header {
+      background-color: pink;
+    }
     .header,
     .info {
-      background-color: pink;
       // padding: 40vh 0;
       border-bottom: 1px solid white;
       padding: 1rem;
-      height: 100vh;
-      scroll-snap-align: start;
+      height: 90vh;
+      // scroll-snap-align: start;
       text-align: center;
       position: relative;
 
@@ -74,11 +104,22 @@ h4 {
       }
     }
   }
-  .info {
-    background-color: greenyellow !important;
+  .headerContainer:nth-child(2n) {
+    .info {
+      background-color: paleturquoise;
+    }
+  }
+  .headerContainer:nth-child(2n + 1) {
+    .info {
+      background-color: cadetblue;
+    }
   }
   .coffeeContent {
-    background-color: #f9e5bc !important;
+    background-color: #f9e5bc;
+    height: 100%;
+    h3 {
+      margin: 0;
+    }
   }
   .animationZone {
     position: relative;
@@ -131,13 +172,13 @@ h4 {
       margin: 0 16px;
       padding: 16px 0;
     }
+    a {
+      color: wheat;
+    }
   }
   // .headerContainer,
   // .footerFill,
   // .animationZone {
   //   scroll-snap-align: start;
   // }
-}
-a {
-  color: wheat;
 }

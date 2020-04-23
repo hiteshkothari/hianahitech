@@ -1,0 +1,30 @@
+<div class="animationZone" id='animation'>
+
+
+  <app-summer *ngIf="selectedTimingAndTheme.cssFile.pathUrl == 'summer'"></app-summer>
+  <app-monsoon *ngIf="selectedTimingAndTheme.cssFile.pathUrl == 'monsoon'"></app-monsoon>
+  <app-winter *ngIf="selectedTimingAndTheme.cssFile.pathUrl == 'winter'"></app-winter>
+
+
+
+  <div class="animationControl">
+    <div class="bottomBars">
+      <div class="timingBottomBar">
+        <button *ngFor="let time of timing" (click)="setTime(time)" class="timing">
+          <!-- style="background-image: url('{{time.imageUrl}}');"> -->
+          <img [src]="time.imageUrl">
+          {{time.name}}
+        </button>
+      </div>
+
+      <div class="seasonBottomBar">
+        <button *ngFor="let themeButton of themes" (click)="loadTheme(themeButton,'animation')" class="seasons">
+          <!-- style="background-image: url('{{themeButton.imageUrl}}');"> -->
+          <img [src]="themeButton.imageUrl">
+          {{themeButton.name}}
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
