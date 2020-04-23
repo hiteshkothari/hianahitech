@@ -1,0 +1,24 @@
+.techContainer {
+  margin: 10px 0;
+  .progress {
+    width: 80%;
+    margin: 0 auto;
+    // background-color: red;
+    background-color: white;
+    > div {
+      background-image: -webkit-linear-gradient(
+          0deg,
+          transparent 33%,
+          rgba(0, 0, 0, 0.1) 66%,
+          transparent 66%
+        ),
+        // -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+          -webkit-linear-gradient(left, #09c, #f44);
+
+      border-radius: 2px;
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+      height: 15px;
+      transition: all 4s ease;
+    }
+  }
+}

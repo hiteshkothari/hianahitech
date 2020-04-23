@@ -1,5 +1,22 @@
-<div class="mainpage">
+<nav class="flex-container">
+
+  <h1><a href="/">Hitesh Kothari</a></h1>
+
   <div>
+    <a [routerLink]="['/Home']" routerLinkActive="router-link-active">Home</a>
+  </div>
+  <!-- <div><a [routerLink]="['/Make']" routerLinkActive="router-link-active">Make a Coffee</a></div> -->
+  <!-- <div>About</div>
+  <div>Contact</div>
+  <div>Experience</div>
+  <div>Products</div>
+  <div>Follow</div>
+  <div>Cart</div> -->
+</nav>
+
+<div class="mainpage">
+  <router-outlet></router-outlet>
+  <!-- <div>
     <div class='headerContainer'>
       <div class="header">
         HEllo World,
@@ -30,7 +47,6 @@
         <div class="bottomBars">
           <div class="timingBottomBar">
             <button *ngFor="let time of timing" (click)="setTime(time)" class="timing">
-              <!-- style="background-image: url('{{time.imageUrl}}');"> -->
               <img [src]="time.imageUrl">
               {{time.name}}
             </button>
@@ -38,7 +54,7 @@
 
           <div class="seasonBottomBar">
             <button *ngFor="let themeButton of themes" (click)="loadTheme(themeButton,'animation')" class="seasons">
-              <!-- style="background-image: url('{{themeButton.imageUrl}}');"> -->
+
               <img [src]="themeButton.imageUrl">
               {{themeButton.name}}
             </button>
@@ -46,14 +62,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <footer class="footerFill">
     <div>
-      <h4>DESIGN AND DEVELOPED BY ME.</h4>
-      SVG grahics - Undraw.io<br>
+      <h4>DESIGN AND DEVELOPED BY ME</h4>
+      SVG grahics - <a href="https://undraw.co/">Undraw</a><br>
       <!-- SSG - Scully For Angular<br> -->
       <!-- BackGround Images to add -->
-      <a [routerLink]="['/Make']" fragment='animation'> Make a coffeee for me.</a>
+      Coffee Shaker <a [routerLink]="['/Make']" fragment='animation'>Spin IT</a>
     </div>
+
+    <!-- TODO:  Add the head up side down -->
   </footer>
 </div>

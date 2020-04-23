@@ -1,0 +1,70 @@
+<div>
+  <div class='headerContainer'>
+    <div class="header">
+      🙏 Namaste Duniya 🙏
+      <div class="messageText">
+        <span>
+          <u>Mai <span class="s">HitesH Kothari</span><span class="c">HitecH Hitesh</span> apka swagut karta hu.</u>
+          <!-- mere is
+            website pur.
+             -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class='headerContainer'>
+    <div class="info">
+      <!-- Occupation -->
+      Who am I?
+      <!-- -- Show Case
+      -- Qotation ke liye contact me number whatsapp link e
+    experience
+     currently working for client as Front End Developer
+    -->
+      <div class="messageText">
+        <span>
+          <!-- I'm going to be Full Stack Developer, write now Front End Developer :)<br> -->
+          I'm 💻Fullstack Developer from Mumbai🧡. Developing Web Applications for the Client around the Planet
+          Earth🌎<br>😃
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class='headerContainer'>
+    <div class="info">
+      <!-- Tech Stack -->
+      Languages I know (English, Hindi) but Technically
+      <div class="messageText">
+        <div>
+          <div class="techContainer" *ngFor="let language of Languagelist">
+            <div class="languageName">{{language.name}}</div>
+            <div class="progress">
+              <div [ngStyle]="{'width.%': language.percentage}"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='headerContainer'>
+    <div class="info">
+      Tech Stack (Basically iDevelop using)😅
+      <div class="messageText">
+        <div>
+          <div class="techContainer" *ngFor="let stack of stackList">
+            <div class="languageName" [innerHTML]="stack.name"></div>
+            <!-- {{stack.name}} -->
+            <div class="progress">
+              <div [ngStyle]="{'width.%': stack.percentage }"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-sesaons-control></app-sesaons-control>
+
+</div>

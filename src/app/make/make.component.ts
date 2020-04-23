@@ -18,8 +18,11 @@ export class MakeComponent implements OnInit {
     // gsap.registerPlugin(Draggable);
 
     // gsap.set('#circle', { transformOrigin: '50% 50%' });
-
-
+    if (screen.width < 750) {
+      const svg = document.getElementById('text835');
+      svg.textContent = 'tap';
+      svg.setAttribute('x', '655');
+    }
     // Draggable.create('#circle', {
     //   type: 'rotation',
     //   inertia: true

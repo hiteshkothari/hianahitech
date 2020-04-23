@@ -7,6 +7,10 @@ import { SummerComponent } from './summer/summer.component';
 import { WinterComponent } from './winter/winter.component';
 import { MonsoonComponent } from './monsoon/monsoon.component';
 import { MakeComponent } from './make/make.component';
+import { HomeComponent } from './home/home.component';
+import { SesaonsControlComponent } from './sesaons-control/sesaons-control.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { MakeComponent } from './make/make.component';
     SummerComponent,
     WinterComponent,
     MonsoonComponent,
-    MakeComponent
+    MakeComponent,
+    HomeComponent,
+    SesaonsControlComponent,
+    BlogsComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
